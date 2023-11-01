@@ -10,22 +10,30 @@ let userAgree = confirm("Would you like to try to guess the secret Number?")
 if(userAgree) {
     
     let computerNumber = 3
-    while(true) {
-         let userGuess = prompt ("Please enter a number.")
+    let counter = 0
+    while(counter < 5) {
+         let userGuess = prompt ("Great! Please enter a number.")
          if (userGuess == computerNumber) {
             alert("Yay!!  You guessed the secret Number!!!")
-        
-         }
-        
+            break
+        }
+      
 else {
 
     alert("Sorry -- Try again!")
-}
-    break
 
 }
+counter = counter + 1
+    }
+if(counter == 5) {
+alert("You lose! :(  Only 5 guesses allowed.")
+}
+let playAgain = confirm("Would you like to play again?")
+if(playAgain) {
+    location.reload();
 }
 
+}
 else {
     alert("Ok!  Come back to guess another time.")
 }
