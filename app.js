@@ -22,6 +22,11 @@ else if
     alert("Secret Number is lower")
 }
 
+else {
+(userGuess < computerNumber)
+    alert("Secret Number is higher")
+}
+
         // else {
         //     alert("Sorry! Wrong Number")
         // }
