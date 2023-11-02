@@ -1,9 +1,16 @@
-h1 {
-color: purple
-
-}
-
 body {
-background-color: yellow;
-
+/* background-color: yellow; */
+background-image: url(genie-icon-vector-8855795.jpg);
+color: purple;
+font family: Papyrus, fantasy;
+font-size: x-large;
+font-style: oblique;
+text-align: right; 
 }
+
+/* img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+} */

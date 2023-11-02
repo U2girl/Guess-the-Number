@@ -5,26 +5,26 @@ User types in a number and presses Guess
 The User gets 5 chances and given hints
 */
 
-let userAgree = confirm("Welcome to Guess the Secret Number!  Click ok to start guessing")
+let userAgree = confirm("Welcome to Guess My Secret Number!  Click ok to start guessing!")
 if(userAgree) {
     let computerNumber = Math.ceil(Math.random()*10)
     console.log(computerNumber)
     let counter = 0
-    while(counter < 5) {
-        let userGuess = prompt("Please enter a number between 1 and 20")
+    while(counter < 3) {
+        let userGuess = prompt("You have 3 chances to guess My Secret Number.  If you guess correctly, I will grant you one wish!  Enter a number between 1 and 10.")
         if(userGuess == computerNumber) {
-            alert("Yay! You guessed the Secret Number!!")
+            alert("You guessed My Secret Number!  Close your eyes and whisper your desire 3 times. Your wish is my command.")
             break
         }
 
 else if 
     (userGuess > computerNumber){
-    alert("Secret Number is lower")
+    alert("My Secret Number is LOWER.")
 }
 
-else {
+else  {
 (userGuess < computerNumber)
-    alert("Secret Number is higher")
+    alert("My Secret Number is HIGHER.")
 }
 
         // else {
@@ -32,12 +32,9 @@ else {
         // }
         counter += 1
           }
-    //       const Measure = function () {
-    // if(userGuess > computerNumber) {
-    //     alert("Secret Number is lower")
-    // }
-if(counter == 5) {
-    alert("Sorry! Only 5 Guesses Allowed")
+
+if(counter == 3) {
+    alert("Only 3 Guesses Allowed.  My Secret Number was " + computerNumber +".  I am unable to grant you a wish.")
 }
 let playAgain = confirm("Play again?")
 if(playAgain) {
@@ -49,5 +46,5 @@ else {
 }
 }
 else {
-    alert("Ok! Come back and play another time.")
+    alert("Ok! Come back and try to guess My Secret Number another time.")
 }
