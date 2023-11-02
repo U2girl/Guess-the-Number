@@ -5,6 +5,7 @@ User types in a number and presses Guess
 The User gets 5 chances and given hints
 */
 
+function startGame() {
 let userAgree = confirm("Welcome to Guess My Secret Number!  Click ok to start guessing!")
 if(userAgree) {
     let computerNumber = Math.ceil(Math.random()*10)
@@ -47,4 +48,5 @@ else {
 }
 else {
     alert("Ok! Come back and try to guess My Secret Number another time.")
+}
 }
