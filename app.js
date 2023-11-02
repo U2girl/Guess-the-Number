@@ -16,12 +16,21 @@ if(userAgree) {
             alert("Yay! You guessed the Secret Number!!")
             break
         }
-        else {
-            alert("Sorry! Wrong Number")
-        }
+
+else if 
+    (userGuess > computerNumber){
+    alert("Secret Number is lower")
+}
+
+        // else {
+        //     alert("Sorry! Wrong Number")
+        // }
         counter += 1
           }
-    
+    //       const Measure = function () {
+    // if(userGuess > computerNumber) {
+    //     alert("Secret Number is lower")
+    // }
 if(counter == 5) {
     alert("Sorry! Only 5 Guesses Allowed")
 }
