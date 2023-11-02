@@ -37,7 +37,7 @@ else  {
 if(counter == 3) {
     alert("Only 3 Guesses Allowed.  My Secret Number was " + computerNumber +".  I am unable to grant you a wish.")
 }
-let playAgain = confirm("Play again?")
+let playAgain = confirm("Play Again? Press Open Sesame.")
 if(playAgain) {
     location.reload();
 }
